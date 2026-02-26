@@ -20,7 +20,7 @@ There is no backend, authentication system, or API integration as stated in the 
 
 ## 🚀 Live Preview
 
-Live URL: 
+Live URL: https://food-ordering-app-two-jade.vercel.app/
 
 ---
 
