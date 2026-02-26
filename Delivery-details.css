@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2933;
+  background: #f3f4f6;
+  line-height: 1.5;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  padding: 20px 30px;
+}
+
+.logo {
+  color: orange;
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin-left: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 80px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navbar .loginn {
+  display: flex;
+}
+
+.navbar .login {
+  background-color: #ff7a18;
+  padding: 12px 40px;
+  color: white;
+  border-radius: 12px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.delivery-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 650px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.delivery-card h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.delivery-card hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin-bottom: 25px;
+}
+
+.address-box {
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  background: #f9fafb;
+}
+
+.address-text {
+  font-size: 14px;
+}
+
+.change-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1.5px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.footer-section {
+  background: #62412e;
+  color: #ffffff;
+  padding: 56px 90px 28px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px;
+  margin-bottom: 32px;
+  align-items: start;
+}
+
+.footer-grid h2 {
+  font-family: "Island Moments";
+  color: orange;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.contact p {
+  line-height: 2.5;
+  font-size: 10px;
+}
+
+.footer-grid h4,
+.footer-grid a {
+  font-weight: 200;
+}
+
+.footer-grid ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-grid li a {
+  text-decoration: none;
+  color: rgb(232, 224, 224);
+  font-size: 10px;
+}
+
+.footer-grid p {
+  color: rgb(232, 224, 224);
+  margin: 8px 0 0;
+  line-height: 1.6;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: rgb(232, 224, 224);
+  font-size: 10px;
+  margin: 0px 0px;
+}
+
+.footer-copy {
+  font-size: 10px;
+  color: rgb(232, 224, 224);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 60px 20px;
+  }
+
+  .delivery-card {
+    max-width: 600px;
+    padding: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    position: relative;
+    justify-content: space-between;
+    padding: 16px 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .logo {
+    margin-left: 0;
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 40px 16px;
+    align-items: flex-start;
+  }
+
+  .delivery-card {
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: none;
+  }
+
+  .address-box {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .change-link {
+    align-self: flex-end;
+  }
+
+  .footer-section {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .delivery-card {
+    padding: 18px;
+  }
+
+  .delivery-card h1 {
+    font-size: 20px;
+  }
+
+  .address-text {
+    font-size: 13px;
+  }
+
+  .change-link {
+    font-size: 12px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .delivery-card {
+    padding: 15px;
+  }
+
+  .delivery-card h1 {
+    font-size: 18px;
+  }
+
+  .address-text {
+    font-size: 12px;
+  }
+
+  .form-group input {
+    font-size: 12px;
+  }
+}

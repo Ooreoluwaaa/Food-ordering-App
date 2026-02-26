@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/Sign-in.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="left-side">
+        <div class="left-content">
+          <h1>Chuks Kitchen</h1>
+          <p>
+            Your journey to delicious, authentic Nigerian meals starts here.
+            Sign up or log in to order your favorites today!
+          </p>
+        </div>
+      </section>
+
+      <section class="right-side">
+  <header class="header">
+    <h1>Chuks Kitchen</h1>
+    <h2>Login Your Account</h2>
+  </header>
+
+  <!-- Wrap everything inside a form -->
+  <form id="loginForm" novalidate>
+
+    <!-- EMAIL -->
+    <div class="input-group">
+      <label for="email">Email</label>
+      <div class="input-box">
+        <img src="./assets/email (1).png" alt="email-icon" />
+        <input 
+          id="email"
+          type="email"
+          placeholder="name@gmail.com"
+          required
+        />
+      </div>
+      <small class="error-message" id="emailError"></small>
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="input-group">
+      <label for="password">Password</label>
+      <div class="input-box">
+        <img src="./assets/padlock.png" alt="padlock-icon" />
+        <input 
+          type="password"
+          id="password"
+          placeholder="••••••"
+          minlength="6"
+          required
+        />
+        <img 
+          src="./assets/Icons.png"
+          alt="eye-icon"
+          id="togglePassword"
+          style="cursor:pointer;"
+        />
+      </div>
+      <small class="error-message" id="passwordError"></small>
+    </div>
+
+    <!-- FORGOT PASSWORD -->
+    <div class="forgot-password">
+      <a href="#">Forgot Password?</a>
+    </div>
+
+    <!-- CONTINUE BUTTON -->
+    <div class="continue-section">
+      <button type="submit" id="continueBtn">Continue</button>
+      <p>Or continue with</p>
+    </div>
+
+  </form>
+
+  <!-- LOGIN OPTIONS -->
+  <div class="login-options">
+    <a href="#" class="login-box">
+      <img src="./assets/Social Media.png" alt="google-logo" />
+      <span>Continue with Google</span>
+    </a>
+
+    <a href="#" class="login-box">
+      <img src="./assets/Social Media (1).png" alt="facebook-logo" />
+      <span>Continue with Apple</span>
+    </a>
+  </div>
+
+  <div class="sign-up">
+    <p>Don't have an account? <a href="Sign-up.html">Create an account</a></p>
+  </div>
+</section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="footer-grid">
+        <div>
+          <h2>Chuks Kitchen</h2>
+          <p>
+            Bringing the authentic<br />flavors of Nigerian<br />home cooking to
+            your<br />table, with passion<br />
+            and care.
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">My Order</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <h4>Contact Us</h4>
+          <p>234 801 234 5678</p>
+          <p>hello@chukskitchen.com</p>
+          <p>123 Taste blvd, Lagos, Nigeria</p>
+        </div>
+
+        <div class="social-media">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Linkedin</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 2020 Lift Media. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="Sign-in.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/Sign-up.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="left-side">
+        <div class="left-content">
+          <h1>Chuks Kitchen</h1>
+          <p>
+            Your journey to delicious, authentic Nigerian meals starts here.
+            Sign up or log in to order your favorites today!
+          </p>
+        </div>
+      </section>
+
+      <section class="right-side">
+        <header class="header">
+          <h1>Chuks Kitchen</h1>
+          <h2>Create Your Account</h2>
+        </header>
+
+        <form id="signupForm" novalidate>
+         
+          <div class="input-group">
+            <label for="email">Email</label>
+            <div class="input-box">
+              <img src="./assets/email (1).png" alt="email-icon" />
+              <input
+                id="email"
+                type="email"
+                placeholder="name@gmail.com"
+                required
+              />
+            </div>
+            <small class="error-message" id="emailError"></small>
+          </div>
+
+          <div class="input-group">
+            <label for="phone">Phone number</label>
+            <div class="input-box">
+              <img src="./assets/telephone.png" alt="phone-icon" />
+              <input id="phone" type="tel" placeholder="8123340690" required />
+            </div>
+            <small class="error-message" id="phoneError"></small>
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <div class="input-box">
+              <img src="./assets/padlock.png" alt="padlock-icon" />
+              <input
+                id="password"
+                type="password"
+                placeholder="Minimum 6 characters"
+                minlength="6"
+                required
+              />
+            </div>
+            <small class="error-message" id="passwordError"></small>
+          </div>
+
+          <div class="input-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <div class="input-box">
+              <img src="./assets/padlock.png" alt="padlock-icon" />
+              <input
+                id="confirmPassword"
+                type="password"
+                placeholder="Re-enter password"
+                required
+              />
+            </div>
+            <small class="error-message" id="confirmPasswordError"></small>
+          </div>
+
+          <div class="agreement-section">
+            <input type="checkbox" id="agree" />
+            <p>
+              I agree to the
+              <a href="#">Terms and Conditions</a>
+              and
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+          <small class="error-message" id="agreeError"></small>
+
+          <div class="continue-section">
+            <button type="submit">Continue</button>
+            <p>Or continue with</p>
+          </div>
+        </form>
+
+        <div class="login-options">
+          <a href="#" class="login-box">
+            <img src="./assets/Social Media.png" alt="google-logo" />
+            <span>Continue with Google</span>
+          </a>
+
+          <a href="#" class="login-box">
+            <img src="./assets/Social Media (1).png" alt="apple-logo" />
+            <span>Continue with Apple</span>
+          </a>
+        </div>
+
+        <div class="sign-up">
+          <p>Already have an account? <a href="Sign-in.html">Sign in</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="footer-grid">
+        <div>
+          <h2>Chuks Kitchen</h2>
+          <p>
+            Bringing the authentic<br />flavors of Nigerian<br />home cooking to
+            your<br />table, with passion<br />
+            and care.
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">My Order</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <h4>Contact Us</h4>
+          <p>234 801 234 5678</p>
+          <p>hello@chukskitchen.com</p>
+          <p>123 Taste blvd, Lagos, Nigeria</p>
+        </div>
+
+        <div class="social-media">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Linkedin</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 2020 Lift Media. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="Sign-up.js"></script>
+  </body>
+</html>
